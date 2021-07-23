@@ -19,6 +19,9 @@ Return
 ;*************************************************
 ;       Text replacements for most used keywords Input
 ;*************************************************
+;Edit any of the info after :: on the right hand side of the command. 
+;Format for keybinds
+; ]command
 
 ::]ty::Thank you
 Return
