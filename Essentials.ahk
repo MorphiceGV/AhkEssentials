@@ -8,7 +8,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ;Keybind shortcut 
 F12::
-
 KeyDown := !keydown
 If KeyDown 
 	;Keybind in discord in push to talk field 
@@ -17,8 +16,28 @@ Else
 	SendInput {F9 up}	
 Return
 
-;testing inital commit to Github
-;These comments are only a test 
+;*************************************************
+;       Text replacements for most used keywords Input
+;*************************************************
+
+::]ty::Thank you
+Return
+
+::]tyxx:: Thank you, {enter}FirstName LastName
+Return
+
+::]gmail::example@gmail.com
+Return
+
+::]mycontact::
+(
+FirstName Lastname
+Title
+Email
+Phone
+)
+Return
+
 
 
 
