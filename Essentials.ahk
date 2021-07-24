@@ -2,13 +2,13 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-
-
 ;Menu,Tray,Icon,IxQuivck.ico
 ;***********************************************************************************************************
 ;							Keybindings 
 ;***********************************************************************************************************
 ;Keybind shortcut 
+; Used for discord push to talk setting
+; Toggles F9 key to local mute when used for streaming
 F12::
 KeyDown := !keydown
 If KeyDown 
