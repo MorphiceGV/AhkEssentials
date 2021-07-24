@@ -5,12 +5,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 ;Menu,Tray,Icon,IxQuivck.ico
-
+;***********************************************************************************************************
+;							Keybindings 
+;***********************************************************************************************************
 ;Keybind shortcut 
 F12::
 KeyDown := !keydown
 If KeyDown 
-	;Keybind in discord in push to talk field 
+
+;Keybind in discord in push to talk field 
 	SendInput {F9 down}
 Else 
 	SendInput {F9 up}	
