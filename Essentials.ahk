@@ -9,15 +9,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;Keybind shortcut 
 ; Used for discord push to talk setting
 ; Toggles F9 key to local mute when used for streaming
-F12::
-KeyDown := !keydown
-If KeyDown 
+;F12::
+;KeyDown := !keydown
+;If KeyDown 
 
 ;Keybind in discord in push to talk field 
-	SendInput {F9 down}
-Else 
-	SendInput {F9 up}	
-Return
+;	SendInput {F9 down}
+;Else 
+;	SendInput {F9 up}	
+;Return
 
 ;*************************************************
 ;       Text replacements for most used keywords Input
@@ -44,6 +44,17 @@ Phone
 )
 Return
 
+; rebind top row of keys 
+1::!
+2::@
+3::#
+4::$
+5::Send `%
+6::^
+7::&
+8::*
+9::(
+0::)
 
 
 
